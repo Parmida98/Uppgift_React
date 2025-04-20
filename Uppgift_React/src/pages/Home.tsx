@@ -1,5 +1,5 @@
 import React from 'react';
-// import moonImage from '../assets/moon.png';
+import moonImage from '../assets/moon.png';
 
 interface HomeProps {
   toggleTheme: () => void;
@@ -19,9 +19,9 @@ const Home: React.FC<HomeProps> = ({ toggleTheme }) => {
         The discovery that the Moon harbors water ice, and that the highest concentrations occur within darkened craters at the poles, <br></br> 
         makes the Moon a little more hospitable for future human colonists. <br></br>
         </p>
-      <button id="button-container" onClick={toggleTheme}>Light or Dark theme</button>
+      <div className="button-container"><button onClick={toggleTheme}>Light or Dark theme</button></div>
     </div>
-    {/* <img src={moonImage} alt="Moon" className="bottom-image" /> */}
+    <img src={moonImage} alt="Moon" className="bottom-image" />
     </>
   );
 };

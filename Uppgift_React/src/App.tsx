@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import MoonFacts from './pages/MoonFacts.tsx';
+import './App.css';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);

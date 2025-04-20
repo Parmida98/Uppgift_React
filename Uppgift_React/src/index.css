@@ -1,3 +1,100 @@
+/*//////////// Home page ////////////*/
+/* Title */
+h1 {
+  text-transform: uppercase;
+  font-family: Impact;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: -15%;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+
+p {
+  margin-bottom: 3rem;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/*//////////////// Moon page //////////////*/
+/* Title */
+h2 {
+  text-transform: uppercase;
+  font-family: Impact;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 120%;
+  margin-top: -15%;
+}
+
+/* Title of description */
+h3 {
+  font-family: Impact;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.fact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.moonbutton {
+  padding: 5px 10px;
+  border: none;
+  background-color: #3f3f3f;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+
+
+/*/////////// Knappar //////////////*/
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3f3f3f;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #5a5a5a;
+}
+
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*////////////// Hela hemsidan /////////////*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  min-height: 100vh;
+  padding: 2rem;
+}
+
 .light {
   background-color: white;
   color: black;
@@ -17,14 +114,50 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #fff;
   color: #111;
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Bottenbild */
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 150px;
+  background-image: url('/moon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.6;
+  z-index: -1;
+  pointer-events: none;
+}
 
-/* Navigering */
+
+
+/* .bottom-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 150px;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+  pointer-events: none;
+} */
+
+
+
+/*/////// Navigering /////////*/
 nav {
   position: fixed;
   font-family: Impact;
@@ -57,102 +190,4 @@ nav a {
 
 nav a:hover {
   border-color: #999;
-}
-
-/* Knappar */
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #3f3f3f;
-  color: white;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 10px 0;
-}
-
-button:hover {
-  background-color: #5a5a5a;
-}
-
-
-#button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* Title */
-h1 {
-  text-transform: uppercase;
-  font-family: Impact;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  max-width: 100%;
-}
-
-
-p {
-  margin-bottom: 3rem;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  min-height: 100vh;
-  padding: 2rem;
-}
-
-
-
-/* Moon page */
-/* Title of description */
-h3 {
-  font-family: Impact;
-  font-size: 20px;
-  font-style: normal;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  max-width: 100%;
-}
-
-/* Title */
-h2 {
-  text-transform: uppercase;
-  font-family: Impact;
-  font-size: 50px;
-  font-style: normal;
-  line-height: 120%;
-  margin-top: 60px;
-}
-
-.fact-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.moonbutton {
-  padding: 5px 10px;
-  border: none;
-  background-color: #3f3f3f;
-  color: white;
-  border-radius: 5px;
-  font-size: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MoonFact } from '../types/MoonInfo';
-import moonImage from '../assets/moon.png';
+// import moonImage from '../assets/moon.png';
 
 const moonFacts: MoonFact[] = [
   { id: 1, title: 'Size and Distance', description: 'With a radius of about 1,080 miles (1,740 kilometers), the Moon is less than a third of the width of Earth. If Earth were the size of a nickel, the Moon would be about as big as a coffee bean. The Moon is an average of 238,855 miles (384,400 kilometers) away. That means 30 Earth-sized planets could fit in between Earth and the Moon. The Moon is slowly moving away from Earth, getting about an inch farther away each year.' },
@@ -31,7 +31,7 @@ const MoonFacts: React.FC = () => {
         </div>
       ))}
     </div>
-    <img src={moonImage} alt="Moon" className="bottom-image" />
+    {/* <img src={moonImage} alt="Moon" className="bottom-image" /> */}
     </>
   );
 };

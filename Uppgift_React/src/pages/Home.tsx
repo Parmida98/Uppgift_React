@@ -1,5 +1,5 @@
 import React from 'react';
-import moonImage from '../assets/moon.png';
+// import moonImage from '../assets/moon.png';
 
 interface HomeProps {
   toggleTheme: () => void;
@@ -8,7 +8,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ toggleTheme }) => {
   return (
     <>
-    <div className="hero" style={{ minHeight: '10vh', paddingBottom: '190px' }}>
+    <div className="hero">
       <h1>Welcome to the Moon</h1>
       <p> Our Moon shares a name with all moons simply because people didn't know other moons existed until Galileo Galilei discovered four moons orbiting Jupiter in 1610. <br></br>
         In Latin, the Moon was called Luna, which is the main adjective for all things Moon-related: lunar. <br></br>
@@ -21,7 +21,7 @@ const Home: React.FC<HomeProps> = ({ toggleTheme }) => {
         </p>
       <button id="button-container" onClick={toggleTheme}>Light or Dark theme</button>
     </div>
-    <img src={moonImage} alt="Moon" className="bottom-image" />
+    {/* <img src={moonImage} alt="Moon" className="bottom-image" /> */}
     </>
   );
 };
